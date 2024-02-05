@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export default function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg width={148} height={98} viewBox="0 0 148 98" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <g clipPath="url(#clip0_406_119)">
