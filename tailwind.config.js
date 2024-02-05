@@ -66,14 +66,13 @@ export default {
       normal: 400,
       bold: 700,
     },
-    lineHeight: '160%',
     fontSize: {
       xs: '12pt',
       sm: '14pt',
       md: '16pt',
       lg: '18pt',
       xl: '20pt',
-      xxl: '24pt',
+      '2xl': '24pt',
     },
     borderColor: {
       current: '#1C2F41',
