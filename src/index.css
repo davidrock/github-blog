@@ -16,6 +16,10 @@
     @apply text-base-subtitle;
   }
 
+  h3 {
+    @apply text-base-subtitle text-lg;
+  }
+
   p {
     @apply text-base-text text-sm;
   }
