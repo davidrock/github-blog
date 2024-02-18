@@ -7,7 +7,7 @@ export const service = axios.create({
 
 service.interceptors.request.use(
   (config) => {
-    const token = import.meta.env.VITE_AUTH_TOKEN;
+    const token = import.meta.env.VITE_GH_TOKEN;
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;

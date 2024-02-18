@@ -1,12 +1,13 @@
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from './services';
-import { Blog } from './pages/Blog';
+import { RouterProvider } from 'react-router-dom';
+import { routes } from './routes';
 
 function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <Blog />
+        <RouterProvider router={routes} />
       </QueryClientProvider>
     </>
   );

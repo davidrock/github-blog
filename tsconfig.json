@@ -28,6 +28,9 @@
       "@components/*": [
         "./src/components/*"
       ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
       "@utils/*": [
         "./src/utils/*"
       ],
@@ -36,6 +39,9 @@
       ],
       "@hooks/*": [
         "./src/hooks/*"
+      ],
+      "@models": [
+        "./src/models/index.ts"
       ]
     }
   },
