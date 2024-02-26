@@ -7,14 +7,20 @@ import Markdown from 'react-markdown';
 import { service } from '@services/axiosConfig';
 import { Issue, Item } from '../../models/issue.interface';
 import { formatDistanceToNow } from 'date-fns';
+import { useNavigation } from 'react-router-dom';
 
 export function Blog() {
+  const navigation = useNavigation();
   const { data } = useQuery<Issue>('posts', async () => {
     const res = (await service.get('/search/issues?q=repo:davidrock/github-blog')).data;
 
     console.log(res);
     return res;
   });
+
+  function handlePostClick(){
+    navigation
+  }
 
   return (
     <div className="flex flex-col w-full bg-base-background">

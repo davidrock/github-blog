@@ -19,7 +19,7 @@ export const routes = createBrowserRouter([
     errorElement: <MyFallbackComponent />,
   },
   {
-    path: '/post',
+    path: '/github-blog/post',
     element: <Post />,
     errorElement: <MyFallbackComponent />,
   },
